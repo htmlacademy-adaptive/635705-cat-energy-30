@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Oleh Parkhomenko](https://up.htmlacademy.ru/adaptive/30/user/635705).
-* Наставник: `Неизвестно`.
+- Студент: [Oleh Parkhomenko](https://up.htmlacademy.ru/adaptive/30/user/635705).
+- Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
