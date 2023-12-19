@@ -1,0 +1,19 @@
+.form__legend {
+  @include basic-text-param($accent-font, 24px, 26px, $accent-text-color);
+  text-transform: uppercase;
+}
+
+.form__label {
+  @include basic-text-param($accent-font, 16px, 16px, $content-text-color);
+  text-transform: uppercase;
+}
+
+.form__input {
+  @include basic-text-param($accent-font, 16px, 16px, $content-text-color);
+  @include placeholder($content-text-color);
+  text-transform: uppercase;
+}
+
+.form__require {
+  @include basic-text-param($base-font, 14px, 16px, $content-text-color);
+}

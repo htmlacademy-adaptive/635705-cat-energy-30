@@ -1,0 +1,8 @@
+.testimonial__title {
+  @include basic-text-param($accent-font, 36px, 40px, $accent-text-color);
+  text-transform: uppercase;
+}
+
+.testimonial__description {
+  @include basic-text-param($base-font, 14px, 18px, $content-text-color);
+}

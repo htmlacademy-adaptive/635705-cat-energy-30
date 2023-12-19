@@ -3,6 +3,24 @@
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
 @import "./global/global.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
 @import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/lead.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/workflow.scss";
+@import "./blocks/testimonial.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/location.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/product.scss";
+@import "./blocks/features.scss";
+@import "./blocks/additionally.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/promotion.scss";
+@import "./blocks/form.scss";
+@import "./blocks/social.scss";

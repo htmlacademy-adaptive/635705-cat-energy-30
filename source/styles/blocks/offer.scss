@@ -1,0 +1,17 @@
+.offer__list {
+  @include reset-list;
+}
+
+.offer__title {
+  @include basic-text-param($accent-font, 24px, 37px, $accent-text-color);
+  text-transform: uppercase;
+}
+
+.offer__description {
+  @include basic-text-param($base-font, 14px, 18px, $content-text-color);
+}
+
+.offer__link {
+  @include basic-text-param($accent-font, 16px, 16px, $accent-text-color);
+  text-transform: uppercase;
+}

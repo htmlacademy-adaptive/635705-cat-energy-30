@@ -1,0 +1,8 @@
+.page__title {
+  @include basic-text-param($accent-font, 36px, 36px, $accent-text-color);
+}
+
+.page__lead {
+  @include basic-text-param($accent-font, 14px, 18px, $accent-text-color);
+  text-transform: uppercase;
+}
