@@ -1,0 +1,8 @@
+.nav__list {
+  @include reset-list;
+}
+
+.nav__link {
+  @include basic-text-param($accent-font, 20px, 20px, $accent-text-color);
+  text-transform: uppercase;
+}

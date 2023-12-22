@@ -1,0 +1,52 @@
+@mixin font-face($font-family, $font-style, $font-weight, $font-path-woff2) {
+  @font-face {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-display: swap;
+    src: local($font-family), url($font-path-woff2) format("woff2");
+  }
+}
+
+@mixin basic-text-param($font-family, $font-size, $line-height, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $line-height;
+
+  color: $color;
+}
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin button-styles($bg-color, $text-color) {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: $accent-font;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+
+  background-color: $bg-color;
+  color: $text-color;
+
+  &:hover {
+    background-color: $accent-bg-color-hover;
+  }
+}
+
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+  }
+}

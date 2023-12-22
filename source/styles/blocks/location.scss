@@ -1,0 +1,9 @@
+.location__slogan {
+  @include basic-text-param($accent-font, 16px, 20px, $accent-text-color);
+  text-transform: uppercase;
+}
+
+.location__residence {
+  @include basic-text-param($base-font, 14px, 20px, $content-text-color);
+  font-style: normal;
+}

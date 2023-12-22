@@ -1,0 +1,7 @@
+.button {
+  @include button-styles($accent-bg-color, $white-color);
+
+  &--disabled {
+    @include button-styles($disabled-bg-color, $content-text-color);
+  }
+}

@@ -9,6 +9,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -23,15 +25,15 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="nav__wrapper" id="nav-menu">
-        <ul class="nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#" aria-current="page">Каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#" aria-current="page">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -39,7 +41,7 @@
   </header>
   <main class="container">
     <section class="primary">
-      <h1 class="primary__title">Каталог продукции</h1>
+      <h1 class="page__title">Каталог продукции</h1>
       <ul class="primary__list">
         <li class="primary__item product">
           <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -64,7 +66,7 @@
               </div>
             </dl>
           </div>
-          <button class="product__button" type="button">Заказать</button>
+          <button class="product__button button" type="button">Заказать</button>
         </li>
         <li class="primary__item product">
           <h3 class="product__title">Cat Energy PRO 1000 г</h3>
@@ -89,7 +91,7 @@
               </div>
             </dl>
           </div>
-          <button class="product__button" type="button">Заказать</button>
+          <button class="product__button button" type="button">Заказать</button>
         </li>
         <li class="primary__item product">
           <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -114,7 +116,7 @@
               </div>
             </dl>
           </div>
-          <button class="product__button" type="button">Заказать</button>
+          <button class="product__button button" type="button">Заказать</button>
         </li>
         <li class="primary__item product">
           <h3 class="product__title">Cat Energy PRO 1000 г</h3>
@@ -140,7 +142,7 @@
               </div>
             </dl>
           </div>
-          <button class="product__button" type="button">Заказать</button>
+          <button class="product__button button" type="button">Заказать</button>
         </li>
         <li class="primary__item product">
           <h3 class="product__title">Cat Energy Slim 500 г</h3>
@@ -165,7 +167,7 @@
               </div>
             </dl>
           </div>
-          <button class="product__button" type="button">Заказать</button>
+          <button class="product__button button" type="button">Заказать</button>
         </li>
         <li class="primary__item product">
           <h3 class="product__title">Cat Energy Slim 1000 г</h3>
@@ -190,7 +192,7 @@
               </div>
             </dl>
           </div>
-          <button class="product__button" type="button">Заказать</button>
+          <button class="product__button button" type="button">Заказать</button>
         </li>
         <li class="primary__item product">
           <h3 class="product__title">Cat Energy Slim 500 г</h3>
@@ -215,14 +217,14 @@
               </div>
             </dl>
           </div>
-          <button class="product__button order-button" type="button">Заказать</button>
+          <button class="product__button button" type="button">Заказать</button>
         </li>
         <li class="primary__item product product--more">
           <h3 class="product__title">Показать еще 100500 товаров</h3>
           <div class="product__features features">
             На самом деле вкусов гораздо больше!
           </div>
-          <button class="product__button" type="button">Показать все</button>
+          <button class="product__button button button--disabled" type="button">Показать все</button>
         </li>
       </ul>
 
@@ -235,25 +237,25 @@
             <h3 class="additional-product__title">Сахарозаменитель</h3>
             <p class="additional-product__description">1 упаковка (100 г)</p>
             <p class="additional-product__price">200 ₽</p>
-            <button class="additional-product__button order-button" type="button">Заказать</button>
+            <button class="additional-product__button button" type="button">Заказать</button>
           </li>
           <li class="additionally__item additional-product">
             <h3 class="additional-product__title">Питьевая вода</h3>
             <p class="additional-product__description">5 литров</p>
             <p class="additional-product__price">50 ₽</p>
-            <button class="additional-product__button order-button" type="button">Заказать</button>
+            <button class="additional-product__button button" type="button">Заказать</button>
           </li>
           <li class="additionally__item additional-product">
             <h3 class="additional-product__title">молоко</h3>
             <p class="additional-product__description">1 литр</p>
             <p class="additional-product__price">100 ₽</p>
-            <button class="additional-product__button order-button" type="button">Заказать</button>
+            <button class="additional-product__button button" type="button">Заказать</button>
           </li>
           <li class="additionally__item additional-product">
             <h3 class="additional-product__title">витамины</h3>
             <p class="additional-product__description">1 упаковка (30 г)</p>
             <p class="additional-product__price">300 ₽</p>
-            <button class="additional-product__button order-button" type="button">Заказать</button>
+            <button class="additional-product__button button" type="button">Заказать</button>
           </li>
         </ul>
         <div class="additionally__promotion promotion">
@@ -267,7 +269,7 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="location__address">
         <b class="location__slogan">Приглашаем к сотрудничеству дилеров!</b>
-        <address>
+        <address class="location__residence">
           ул. Большая Конюшенная, д. 19/8<br>
           Санкт-Петербург
         </address>
@@ -312,7 +314,7 @@
         </ul>
       </div>
       <div class="footer__copyright copyright">
-        <p>HTML Academy</p>
+        <p class="copyright__brand">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">
           <img class="copyright__img" src="http://dummyimage.com/27x34" alt="HTML Academy" width="27" height="34">
         </a>

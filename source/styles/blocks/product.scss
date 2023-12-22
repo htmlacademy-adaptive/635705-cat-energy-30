@@ -1,0 +1,4 @@
+.product__title {
+  @include basic-text-param($accent-font, 16px, 20px, $accent-text-color);
+  text-transform: uppercase;
+}
