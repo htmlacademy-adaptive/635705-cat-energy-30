@@ -29,10 +29,12 @@
   border: none;
   border-radius: 0;
   cursor: pointer;
+  font-family: $accent-font;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: background-color 0.3s ease;
 
   background-color: $bg-color;

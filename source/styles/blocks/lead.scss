@@ -1,3 +1,12 @@
 .lead {
   background-color: $accent-bg-color;
 }
+
+.lead__title {
+  @include basic-text-param($accent-font, 36px, 36px, $white-color);
+}
+
+.lead__slogan {
+  @include basic-text-param($accent-font, 14px, 14px, $white-color);
+  text-transform: uppercase;
+}
