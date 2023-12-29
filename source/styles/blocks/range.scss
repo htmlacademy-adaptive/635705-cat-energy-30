@@ -1,0 +1,42 @@
+.range {
+  width: 57px;
+  height: 256px;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  color: $grey-bg-color;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.range::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  border-radius: 4px;
+  height: 100%;
+  background-color: $grey-bg-color;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+
+.range:hover {
+  cursor: pointer;
+  color: $accent-bg-color;
+}
+
+.range:hover::before {
+  background-color: $accent-bg-color;
+}
+
+.range:active {
+  color: $accent-bg-color-hover;
+}
+
+.range:active::before {
+  background-color: $accent-bg-color-hover;
+}

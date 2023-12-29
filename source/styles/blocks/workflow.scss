@@ -9,4 +9,57 @@
 
 .workflow__item {
   @include basic-text-param($base-font, 14px, 18px, $content-text-color);
+  position: relative;
+}
+
+.workflow__item--leaf::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 28px;
+  background-color: $accent-bg-color;
+  background-image: url("../../images/icons/stack.svg#leaf");
+}
+
+.workflow__item--liquid::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 28px;
+  background-color: $accent-bg-color;
+  background-image: url("../../images/icons/stack.svg#liquid");
+}
+
+.workflow__item--cutlery::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 28px;
+  background-color: $accent-bg-color;
+  background-image: url("../../images/icons/stack.svg#cutlery");
+}
+
+.workflow__item--clock::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 28px;
+  background-color: $accent-bg-color;
+  background-image: url("../../images/icons/stack.svg#clock");
 }
