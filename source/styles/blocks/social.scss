@@ -1,3 +1,17 @@
 .social__list {
   @include reset-list;
 }
+
+.social__link {
+  color: $content-text-color;
+  transition: 0.2s ease-in-out;
+}
+
+.social__link:hover {
+  color: $accent-bg-color;
+}
+
+.social__link:active {
+  opacity: 0.3;
+  color: $accent-bg-color;
+}
