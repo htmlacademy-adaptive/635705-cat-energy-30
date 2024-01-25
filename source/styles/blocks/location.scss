@@ -7,3 +7,24 @@
   @include basic-text-param($base-font, 14px, 20px, $content-text-color);
   font-style: normal;
 }
+
+.location__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.location__address {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.location__address b,
+.location__address address {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
+}

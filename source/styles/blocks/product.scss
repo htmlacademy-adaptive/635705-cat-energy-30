@@ -1,3 +1,9 @@
+.product {
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, $grey-bg-secondary-color 75%, $white-color 25%);
+  }
+}
+
 .product__title {
   @include basic-text-param($accent-font, 16px, 20px, $accent-text-color);
   text-transform: uppercase;

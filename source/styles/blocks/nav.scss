@@ -1,5 +1,23 @@
 .nav__list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
+.nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__link {
