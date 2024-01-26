@@ -5,11 +5,30 @@
 
 .workflow__list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .workflow__item {
   @include basic-text-param($base-font, 14px, 18px, $content-text-color);
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    min-height: 280px;
+  }
 }
 
 .workflow__item--leaf::before {

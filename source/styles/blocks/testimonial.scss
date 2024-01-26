@@ -1,3 +1,15 @@
+.testimonial {
+  background: linear-gradient(to top, $grey-bg-secondary-color 100%, $white-color 0%);
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, $grey-bg-secondary-color 50%, $white-color 50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to top, $grey-bg-secondary-color 75%, $white-color 25%);
+  }
+}
+
 .testimonial__title {
   @include basic-text-param($accent-font, 36px, 40px, $accent-text-color);
   text-transform: uppercase;

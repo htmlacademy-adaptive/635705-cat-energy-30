@@ -1,3 +1,7 @@
 .additionally__title {
   @include basic-text-param($accent-font, 24px, 24px, $accent-text-color);
 }
+
+.additionally__list {
+  @include reset-list;
+}

@@ -15,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header container">
     <a class="header__logo logo" href="#" aria-label="Cat Energy - Главная">
       <picture>
         <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-icon-desktop.svg" width="70"
@@ -28,31 +28,28 @@
       <picture>
         <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-icon-text.svg" width="118"
           height="21">
-        <img class="logo__text" src="images/logo-icon-text.svg" width="101" height="18"
-          alt="Cat Energy">
+        <img class="logo__text" src="images/logo-icon-text.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
-    <nav class="nav">
+    <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="nav__wrapper" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link--active" href="#" aria-current="page">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav__list" id="nav-menu">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="#" aria-current="page">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
-  <main class="container">
-    <section class="lead">
+  <main>
+    <section class="lead container">
       <h1 class="lead__title">Функциональное питание для котов</h1>
       <p class="lead__slogan">Занялся собой? Займись котом!</p>
       <picture>
@@ -65,7 +62,7 @@
       </picture>
       <a class="lead__link button" href="form.html">Подобрать программу</a>
     </section>
-    <section class="offer">
+    <section class="offer container">
       <h2 class="visually-hidden">Наши предложения</h2>
       <ul class="offer__list">
         <li class="offer__item offer__item--slim">
@@ -82,7 +79,7 @@
         </li>
       </ul>
     </section>
-    <section class="workflow">
+    <section class="workflow container">
       <h2 class="workflow__title">Как это работает</h2>
       <ol class="workflow__list">
         <li class="workflow__item workflow__item--leaf">
@@ -99,7 +96,7 @@
         </li>
       </ol>
     </section>
-    <section class="testimonial">
+    <section class="testimonial container">
       <div class="testimonial__definition">
         <h2 class="testimonial__title">Живой пример</h2>
         <p class="testimonial__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
@@ -147,7 +144,7 @@
   <footer class="footer">
     <section class="footer__location location">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="location__address">
+      <div class="location__address container">
         <b class="location__slogan">Приглашаем к сотрудничеству дилеров!</b>
         <address class="location__residence">
           ул. Большая Конюшенная, д. 19/8<br>
@@ -157,15 +154,15 @@
       <div class="location__map">
         <picture>
           <source type="image/png" media="(min-width: 1440px)"
-            srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
           <source type="image/png" media="(min-width: 768px)"
-            srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362"
+            srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+          <img class="location__img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362"
             alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </picture>
       </div>
     </section>
-    <section class="cooperation">
+    <section class="cooperation container">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a class="footer__logo logo" href="#top" aria-label="Cat Energy - Главная">
         <img class="logo__text" src="images/logo-icon-text.svg" width="128" height="24"
