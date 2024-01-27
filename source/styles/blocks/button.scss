@@ -1,7 +1,49 @@
 .button {
-  @include button-styles($accent-bg-color, $white-color);
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: $accent-font;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
 
-  &--disabled {
-    @include button-styles($disabled-bg-color, $content-text-color);
+  background-color: $accent-bg-color;
+  color: $white-color;
+
+  &:hover {
+    background-color: $accent-bg-color-hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 15px 20px 13px;
+  }
+}
+
+.button--disabled {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: $accent-font;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+
+  background-color: $disabled-bg-color;
+  color: $content-text-color;
+
+  &:hover {
+    background-color: $accent-bg-color-hover;
   }
 }
