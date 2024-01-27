@@ -11,7 +11,10 @@ html {
 
 body {
   @include basic-text-param($base-font, 14px, 18px, $content-text-color);
+  min-width: 320px;
+  height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 a {

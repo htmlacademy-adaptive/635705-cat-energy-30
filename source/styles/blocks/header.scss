@@ -1,16 +1,30 @@
 .header {
+  position: relative;
   color: #ffffff;
-  min-width: 320px;
   min-height: 66px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     min-height: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 169px;
+    min-height: 185px;
+  }
+}
+
+.header__logo {
+  display: contents;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 13px;
   }
 }
