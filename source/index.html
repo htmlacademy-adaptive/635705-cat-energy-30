@@ -114,28 +114,29 @@
               <dt class="stats__indicator">60 дней</dt>
               <dd class="stats__description">Затрачено времени</dd>
             </div>
-            <div class="stats__item stats__item--totality">
-              <dt class="stats__indicator">15000 Руб.</dt>
-              <dd class="stats__description">Затраты на питание:</dd>
-            </div>
           </dl>
+          <div class="stats__summary">
+            <p class="stats__price">Затраты на питание:</p>
+            <p class="stats__total">15 000 Руб.</p>
+          </div>
         </div>
       </div>
       <div class="testimonial__demonstration slider">
         <picture>
-          <source type="image/png" media="(min-width: 768px)"
+          <source type="image/png" media="(min-width: 768px)" width="560" height="512"
             srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
-          <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280"
-            height="256" alt="Демонстрация кота «До»">
+          <img class="slider__image slider__image--before" width="280" height="256"
+            src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x"
+            alt="Фотография кота после похудения">
         </picture>
         <picture>
-          <source type="image/png" media="(min-width: 768px)"
+          <source type="image/png" media="(min-width: 768px)" width="560" height="512"
             srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
-          <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256"
-            alt="Демонстрация кота «После»">
+          <img class="slider__image slider__image--after" width="280" height="256" src="images/cat-after-mobile@1x.png"
+            srcset="images/cat-after-mobile@2x.png 2x" alt="Демонстрация кота «После»">
         </picture>
-        <button class="range" type="button">
-          <svg width="50" height="50" aria-hidden="true" focusable="false">
+        <button class="slider__range" type="button">
+          <svg width="40" height="40" aria-hidden="true" focusable="false">
             <use href="images/icons/stack.svg#arrows"></use>
           </svg>
           <span class="visually-hidden">Позунок слайдера</span>
@@ -146,12 +147,14 @@
   <footer class="footer">
     <section class="footer__location location">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="location__address container">
-        <b class="location__slogan">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="location__residence">
-          ул. Большая Конюшенная, д. 19/8<br>
-          Санкт-Петербург
-        </address>
+      <div class="location__wrapper container">
+        <div class="location__address">
+          <b class="location__slogan">Приглашаем<br>к сотрудничеству дилеров!</b>
+          <address class="location__residence">
+            ул. Большая Конюшенная, д. 19/8<br>
+            <span>Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="location__map">
         <picture>

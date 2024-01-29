@@ -12,11 +12,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 509px;
+    min-height: 512px;
   }
 }
 
 .lead__wrapper {
+  padding: 28px 0 20px;
+
   @media (min-width: $tablet-width) {
     padding: 43px 90px;
   }
@@ -30,7 +32,6 @@
   @include basic-text-param($accent-font, 36px, 36px, $white-color);
   margin: 0;
   margin-bottom: 23px;
-  padding-top: 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -59,7 +60,7 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 49px;
+    margin-bottom: 45px;
   }
 }
 
@@ -81,6 +82,7 @@
 }
 
 .lead__link {
+  margin-top: 4px;
   width: 100%;
 
   @media (min-width: $tablet-width) {

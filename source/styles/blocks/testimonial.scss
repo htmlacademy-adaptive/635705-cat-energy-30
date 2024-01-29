@@ -1,20 +1,74 @@
 .testimonial {
   background: linear-gradient(to top, $grey-bg-secondary-color 100%, $white-color 0%);
+  padding-top: 27px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $grey-bg-secondary-color 50%, $white-color 50%);
+    background: linear-gradient(to top, $grey-bg-secondary-color 43%, $white-color 43%);
+    padding-top: 48px;
+    padding-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to top, $grey-bg-secondary-color 75%, $white-color 25%);
+    background: linear-gradient(to top, $grey-bg-secondary-color 78%, $white-color 22%);
+    padding-top: 0;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 19%;
+  }
+}
+
+.testimonial__definition {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 35.5%;
+    margin-bottom: 0;
   }
 }
 
 .testimonial__title {
   @include basic-text-param($accent-font, 36px, 40px, $accent-text-color);
-  text-transform: uppercase;
+  margin: 0 0 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 0 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 143px;
+  }
 }
 
 .testimonial__description {
   @include basic-text-param($base-font, 14px, 18px, $content-text-color);
+  margin: 0 0 20px;
+  letter-spacing: 0.1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px;
+  }
+}
+
+.testimonial__demonstration {
+  min-height: 256px;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    width: 560px;
+  }
 }

@@ -1,3 +1,17 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    column-gap: 22px;
+  }
+}
+
 .copyright__brand {
   @include basic-text-param($base-font, 16px, 20px, $content-text-color);
+  margin: 0;
 }
