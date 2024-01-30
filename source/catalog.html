@@ -2,10 +2,10 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Cat Energy: Каталог</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -20,25 +20,25 @@
       <div class="header__wrapper">
         <a class="header__link" href="index.html" aria-current="page">
           <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-icon-desktop.svg"
-              width="70" height="59">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-icon-tablet.svg"
-              width="60" height="50">
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-icon-desktop.svg" width="70"
+              height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-icon-tablet.svg" width="60"
+              height="50">
             <img class="header__image-logo" src="images/logo-icon-mobile.svg" width="33" height="38"
               alt="Функциональное питание для котов">
           </picture>
         </a>
         <a class="header__link logo" href="index.html" aria-current="page">
           <picture>
-            <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-icon-text.svg"
-              width="118" height="21">
-            <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-icon-text.svg"
-              width="101" height="18">
-            <img class="logo__image-text" src="images/logo-icon-text-mobile.svg" width="101" height="18" alt="Cat energy.">
+            <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-icon-text.svg" width="118"
+              height="21">
+            <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-icon-text.svg" width="101"
+              height="18">
+            <img class="logo__image-text" src="images/logo-icon-text-mobile.svg" width="101" height="18"
+              alt="Cat energy.">
           </picture>
         </a>
-        <button class="header__toggle header__toggle--close header__toggle--nojs"
-          type="button">
+        <button class="header__toggle header__toggle--close header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
       </div>
@@ -48,7 +48,7 @@
             <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__active-link">Каталог продукции</a>
+            <a class="nav__link nav__active-link" href="#">Каталог продукции</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="form.html">Подбор программы</a>
@@ -68,8 +68,14 @@
             <div class="product__info-container">
               <a class="product__link product__link--image" href="#">
                 <picture>
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="images/catalog-produt-chicken-500-tablet-desktop@1x.webp 1x, images/catalog-produt-chicken-500-tablet-desktop@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/webp"
+                    srcset="images/catalog-produt-chicken-500-mobile@1x.webp 1x, images/catalog-produt-chicken-500-mobile@2x.webp 2x"
+                    width="68" height="86">
                   <source media="(min-width: 768px)" type="image/png"
-                    srcset="images/catalog-produt-chicken-500-tablet-desktop@1x.png 1x, images/catalog-produt-chicken-500-tablet-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-chicken-500-tablet-desktop@1x.png, images/catalog-produt-chicken-500-tablet-desktop@2x.png 2x"
                     width="161" height="172">
                   <img class="product__image" src="images/catalog-produt-chicken-500-mobile@1x.png"
                     srcset="images/catalog-produt-chicken-500-mobile@2x.png 2x" width="68" height="86"
@@ -104,11 +110,21 @@
             <div class="product__info-container">
               <a class="product__link product__link--image" href="#">
                 <picture>
+                  <source media="(min-width: 1440px)" type="image/webp"
+                    srcset="images/catalog-produt-chicken-1000-desktop@1x.webp 1x, images/catalog-produt-chicken-1000-desktop@2x.webp 2x"
+                    width="172" height="196">
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="images/catalog-produt-chicken-1000-tablet-desktop@1x.webp 1x, images/catalog-produt-chicken-1000-tablet-desktop@2x.webp 2x"
+                    width="168" height="206">
+                  <source type="image/webp"
+                    srcset="images/catalog-produt-chicken-1000-mobile@1x.webp 1x, images/catalog-produt-chicken-1000-mobile@2x.webp 2x"
+                    width="84" height="100">
+
                   <source media="(min-width: 1440px)" type="image/png"
-                    srcset="images/catalog-produt-chicken-1000-desktop@1x.png 1x, images/catalog-produt-chicken-1000-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-chicken-1000-desktop@1x.png, images/catalog-produt-chicken-1000-desktop@2x.png 2x"
                     width="172" height="196">
                   <source media="(min-width: 768px)" type="image/png"
-                    srcset="images/catalog-produt-chicken-1000-tablet-desktop@1x.png 1x, images/catalog-produt-chicken-1000-tablet-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-chicken-1000-tablet-desktop@1x.png, images/catalog-produt-chicken-1000-tablet-desktop@2x.png 2x"
                     width="168" height="206">
                   <img class="product__image" src="images/catalog-produt-chicken-1000-mobile@1x.png"
                     srcset="images/catalog-produt-chicken-1000-mobile@2x.png 2x" width="84" height="100"
@@ -143,8 +159,14 @@
             <div class="product__info-container">
               <a class="product__link product__link--image" href="#">
                 <picture>
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="images/catalog-produt-fish-500-tablet-desktop@1x.webp 1x, images/catalog-produt-fish-500-tablet-desktop@2x.webp 2x"
+                    width="163" height="174">
+                  <source type="image/webp"
+                    srcset="images/catalog-produt-fish-500-mobile@1x.webp 1x, images/catalog-produt-fish-500-mobile@2x.webp 2x"
+                    width="68" height="78">
                   <source media="(min-width: 768px)" type="image/png"
-                    srcset="images/catalog-produt-fish-500-tablet-desktop@1x.png 1x, images/catalog-produt-fish-500-tablet-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-fish-500-tablet-desktop@1x.png, images/catalog-produt-fish-500-tablet-desktop@2x.png 2x"
                     width="163" height="174">
                   <img class="product__image" src="images/catalog-produt-fish-500-mobile@1x.png"
                     srcset="images/catalog-produt-fish-500-mobile@2x.png 2x" width="68" height="78"
@@ -179,11 +201,21 @@
             <div class="product__info-container">
               <a class="product__link product__link--image" href="#">
                 <picture>
+                  <source media="(min-width: 1440px)" type="image/webp"
+                    srcset="images/catalog-produt-fish-1000-desktop@1x.webp 1x, images/catalog-produt-fish-1000-desktop@2x.webp 2x"
+                    width="172" height="196">
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="images/catalog-produt-fish-1000-tablet-desktop@1x.webp 1x, images/catalog-produt-fish-1000-tablet-desktop@2x.webp 2x"
+                    width="168" height="200">
+                  <source type="image/webp"
+                    srcset="images/catalog-produt-fish-1000-mobile@1x.webp 1x, images/catalog-produt-fish-1000-mobile@2x.webp 2x"
+                    width="84" height="100">
+
                   <source media="(min-width: 1440px)" type="image/png"
-                    srcset="images/catalog-produt-fish-1000-desktop@1x.png 1x, images/catalog-produt-fish-1000-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-fish-1000-desktop@1x.png, images/catalog-produt-fish-1000-desktop@2x.png 2x"
                     width="172" height="196">
                   <source media="(min-width: 768px)" type="image/png"
-                    srcset="images/catalog-produt-fish-1000-tablet-desktop@1x.png 1x, images/catalog-produt-fish-1000-tablet-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-fish-1000-tablet-desktop@1x.png, images/catalog-produt-fish-1000-tablet-desktop@2x.png 2x"
                     width="168" height="200">
                   <img class="product__image" src="images/catalog-produt-fish-1000-mobile@1x.png"
                     srcset="images/catalog-produt-fish-1000-mobile@2x.png 2x" width="84" height="100"
@@ -218,11 +250,16 @@
             <div class="product__info-container">
               <a class="product__link product__link--image" href="#">
                 <picture>
-                  <source media="(min-width: 768px)" type="image/png"
-                    srcset="images/catalog-produt-buckwheat-500-tablet-desktop@1x.png 1x, images/catalog-produt-buckwheat-500-tablet-desktop@2x.png 2x"
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="images/catalog-produt-buckwheat-500-tablet-desktop@1x.webp 1x, images/catalog-produt-buckwheat-500-tablet-desktop@2x.webp 2x"
                     width="161" height="171">
-                  <img class="product__image"
-                    src="images/catalog-produt-buckwheat-500-mobile@1x.png"
+                  <source type="image/webp"
+                    srcset="images/catalog-produt-buckwheat-500-mobile@1x.webp 1x, images/catalog-produt-buckwheat-500-mobile@2x.webp 2x"
+                    width="68" height="78">
+                  <source media="(min-width: 768px)" type="image/png"
+                    srcset="images/catalog-produt-buckwheat-500-tablet-desktop@1x.png, images/catalog-produt-buckwheat-500-tablet-desktop@2x.png 2x"
+                    width="161" height="171">
+                  <img class="product__image" src="images/catalog-produt-buckwheat-500-mobile@1x.png"
                     srcset="images/catalog-produt-buckwheat-500-mobile@2x.png 2x" width="68" height="78"
                     alt="Товар Cat energy slim 500 грамм со вкусом гречки." loading="lazy">
                 </picture>
@@ -255,16 +292,24 @@
             <div class="product__info-container">
               <a class="product__link product__link--image" href="#">
                 <picture>
+                  <source media="(min-width: 1440px)" type="image/webp"
+                    srcset="images/catalog-produt-buckwheat-1000-desktop@1x.webp 1x, images/catalog-produt-buckwheat-1000-desktop@2x.webp 2x"
+                    width="172" height="196">
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="images/catalog-produt-buckwheat-1000-tablet-desktop@1x.webp 1x, images/catalog-produt-buckwheat-1000-tablet-desktop@2x.webp 2x"
+                    width="168" height="200">
+                  <source type="image/webp"
+                    srcset="images/catalog-produt-buckwheat-1000-mobile@1x.webp 1x, images/catalog-produt-buckwheat-1000-mobile@2x.png 2x"
+                    width="84" height="100">
                   <source media="(min-width: 1440px)" type="image/png"
-                    srcset="images/catalog-produt-buckwheat-1000-desktop@1x.png 1x, images/catalog-produt-buckwheat-1000-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-buckwheat-1000-desktop@1x.png, images/catalog-produt-buckwheat-1000-desktop@2x.png 2x"
                     width="172" height="196">
                   <source media="(min-width: 768px)" type="image/png"
-                    srcset="images/catalog-produt-buckwheat-1000-tablet-desktop@1x.png 1x, images/catalog-produt-buckwheat-1000-tablet-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-buckwheat-1000-tablet-desktop@1x.png, images/catalog-produt-buckwheat-1000-tablet-desktop@2x.png 2x"
                     width="168" height="200">
-                  <img class="product__image"
-                    src="images/catalog-produt-buckwheat-1000-mobile@1x.png"
-                    srcset="images/catalog-produt-buckwheat-1000-mobile@2x.png 2x" width="84"
-                    height="100" alt="Товар Cat energy slim 1000 грамм со вкусом гречки." loading="lazy">
+                  <img class="product__image" src="images/catalog-produt-buckwheat-1000-mobile@1x.png"
+                    srcset="images/catalog-produt-buckwheat-1000-mobile@2x.png 2x" width="84" height="100"
+                    alt="Товар Cat energy slim 1000 грамм со вкусом гречки." loading="lazy">
                 </picture>
               </a>
               <div class="product__list-wrapper">
@@ -295,8 +340,15 @@
             <div class="product__info-container">
               <a class="product__link product__link--image" href="#">
                 <picture>
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="images/catalog-produt-rice-500-tablet-desktop@1x.webp 1x, images/catalog-produt-rice-500-tablet-desktop@2x.webp 2x"
+                    width="163" height="174">
+                  <source type="image/webp"
+                    srcset="images/catalog-produt-rice-500-mobile@1x.webp 1x, images/catalog-produt-rice-500-mobile@2x.webp 2x"
+                    width="72" height="84">
+
                   <source media="(min-width: 768px)" type="image/png"
-                    srcset="images/catalog-produt-rice-500-tablet-desktop@1x.png 1x, images/catalog-produt-rice-500-tablet-desktop@2x.png 2x"
+                    srcset="images/catalog-produt-rice-500-tablet-desktop@1x.png, images/catalog-produt-rice-500-tablet-desktop@2x.png 2x"
                     width="163" height="174">
                   <img class="product__image" src="images/catalog-produt-rice-500-mobile@1x.png"
                     srcset="images/catalog-produt-rice-500-mobile@2x.png 2x" width="72" height="84"
