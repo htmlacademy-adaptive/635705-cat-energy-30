@@ -1,84 +1,190 @@
+.workflow {
+  width: 280px;
+  margin: 0 auto;
+  padding: 24px 0 49px;
+}
+
 .workflow__title {
-  @include basic-text-param($accent-font, 36px, 40px, $accent-text-color);
-  text-transform: uppercase;
+  margin: 0 0 40px;
 }
 
 .workflow__list {
-  @include reset-list;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  margin-bottom: 49px;
+
   gap: 20px;
 
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
+  @include list-style-none;
 }
 
 .workflow__item {
-  @include basic-text-param($base-font, 14px, 18px, $content-text-color);
   position: relative;
 
-  @media (min-width: $tablet-width) {
-    width: 250px;
-    min-height: 280px;
+  min-height: 60px;
+  padding-left: 80px;
+}
+
+.workflow__text {
+  font-family: $secondary-font;
+
+  align-self: center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    content: "";
+
+    background-color: $accent-color;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
-.workflow__item--leaf::before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 25px 28px;
-  background-color: $accent-bg-color;
-  background-image: url("../../images/icons/stack.svg#leaf");
+.workflow__text--leaf {
+  &::before {
+    background-image: url("../../images/icons/advantages-item-leaf.svg");
+    background-size: 30px 32px;
+  }
 }
 
-.workflow__item--liquid::before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 25px 28px;
-  background-color: $accent-bg-color;
-  background-image: url("../../images/icons/stack.svg#liquid");
+.workflow__text--powder {
+  &::before {
+    background-image: url("../../images/icons/advantages-item-powder.svg");
+    background-size: 26px 29px;
+  }
 }
 
-.workflow__item--cutlery::before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 25px 28px;
-  background-color: $accent-bg-color;
-  background-image: url("../../images/icons/stack.svg#cutlery");
+.workflow__text--food {
+  &::before {
+    background-image: url("../../images/icons/advantages-item-food.svg");
+    background-size: 25px 30px;
+  }
 }
 
-.workflow__item--clock::before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 25px 28px;
-  background-color: $accent-bg-color;
-  background-image: url("../../images/icons/stack.svg#clock");
+.workflow__text--time {
+  &::before {
+    background-image: url("../../images/icons/advantages-item-time.svg");
+    background-size: 25px 31px;
+  }
+}
+
+.workflow__text-transposition {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .workflow {
+    width: 100%;
+    padding: 48px 0;
+
+    border-bottom: 1px solid $grey-e6-color;
+  }
+
+  .workflow__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .workflow__title {
+    margin-bottom: 29px;
+  }
+
+  .workflow__list {
+    flex-direction: row;
+
+    margin-bottom: 0;
+
+    counter-reset: number-list;
+
+    row-gap: 37px;
+    column-gap: 135px;
+  }
+
+  .workflow__item {
+    max-width: 250px;
+    min-height: 280px;
+    margin-bottom: 0;
+    padding-top: 151px;
+    padding-bottom: 57px;
+    padding-left: 0;
+
+    &::before {
+      font-size: 280px;
+      line-height: 280px;
+
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+
+      content: counter(number-list);
+      counter-increment: number-list;
+
+      color: $grey-f2-color;
+    }
+  }
+
+  .workflow__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    min-width: 250px;
+
+    &::before {
+      top: 40px;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .workflow__text-transposition {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .workflow {
+    width: 1220px;
+    padding: 48px 0 67px;
+
+    border-bottom: none;
+  }
+
+  .workflow__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .workflow__title {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  .workflow__list {
+    justify-content: flex-start;
+
+    gap: 78px;
+  }
+
+  .workflow__item {
+    max-width: 246px;
+    padding-top: 148px;
+
+    &:nth-child(4) {
+      margin-left: 2px;
+    }
+  }
+
+  .workflow__text {
+    min-width: 246px;
+  }
 }

@@ -1,0 +1,24 @@
+.logo {
+  &:focus-visible .logo__image-text {
+    opacity: 0.8;
+  }
+}
+
+.logo__image-text {
+  display: block;
+  margin-right: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image-text {
+    padding: 0;
+  }
+}

@@ -1,8 +1,0 @@
-.stats__indicator {
-  @include basic-text-param($accent-font, 24px, 24px, $accent-text-color);
-  text-transform: uppercase;
-}
-
-.stats__description {
-  @include basic-text-param($accent-font, 12px, 12px, $content-text-color);
-}

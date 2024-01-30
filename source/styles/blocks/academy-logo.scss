@@ -1,0 +1,77 @@
+.academy-logo__link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  &:hover .academy-logo__image {
+    color: $accent-color;
+  }
+
+  &:focus-visible .academy-logo__image {
+    color: $accent-color;
+  }
+
+  &:active .academy-logo__image {
+    opacity: 0.3;
+    color: $accent-color;
+  }
+
+  &:active .academy-logo__text {
+    opacity: 0.3;
+  }
+}
+
+.academy-logo__link--text {
+  padding-top: 7px;
+}
+
+.academy-logo__link--image {
+  padding-top: 0;
+}
+
+.academy-logo__text {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $content-text-color;
+}
+
+.academy-logo__image {
+  color: $grey-66-color;
+}
+
+@media (min-width: $tablet-width) {
+  .academy-logo {
+    &:hover .academy-logo__image {
+      color: $accent-color;
+    }
+
+    &:focus-within .academy-logo__image {
+      color: $accent-color;
+    }
+
+    &:active .academy-logo__text {
+      opacity: 0.3;
+    }
+
+    &:active .academy-logo__image {
+      opacity: 0.3;
+      color: $accent-color;
+    }
+  }
+
+  .academy-logo__text {
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .academy-logo__link {
+    padding-top: 8px;
+  }
+
+  .academy-logo__link--image {
+    padding-top: 0;
+  }
+}

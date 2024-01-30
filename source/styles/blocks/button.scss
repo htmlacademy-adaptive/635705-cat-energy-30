@@ -1,7 +1,66 @@
 .button {
-  @include button-styles($accent-bg-color, $white-color);
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 
-  &--disabled {
-    @include button-styles($disabled-bg-color, $content-text-color);
+  color: $white-color;
+  background-color: $accent-color;
+  display: block;
+  border: none;
+  text-align: center;
+
+  width: 280px;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent-hv-color;
+  }
+
+  &:focus-visible {
+    background-color: $accent-hv-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $accent-hv-color;
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
+.button--secondary {
+  color: $content-text-color;
+  background-color: $grey-f2-color;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus-visible {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
+  }
+
+  &:disabled {
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }

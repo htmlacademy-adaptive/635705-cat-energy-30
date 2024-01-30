@@ -1,21 +1,30 @@
-.social__list {
-  @include reset-list;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.social {
+  @include list-style-none;
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
-  max-width: 132px;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.social--index {
+  padding-top: 19px;
 }
 
 .social__link {
-  color: $content-text-color;
-  transition: 0.2s ease-in-out;
+  &:focus-visible .social__image {
+    color: $accent-color;
+  }
 }
 
-.social__link:hover {
-  color: $accent-bg-color;
-}
+.social__image {
+  color: #666666;
 
-.social__link:active {
-  opacity: 0.3;
-  color: $accent-bg-color;
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

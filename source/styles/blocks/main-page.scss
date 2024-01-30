@@ -1,0 +1,33 @@
+.main-page__container {
+  width: 100%;
+}
+
+.main-page__container--preview {
+  background-image:
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60.5%, $white-color 60.5%, $white-color 100%),
+    url("../../images/bg-header-mobile@1x.jpg"),
+    linear-gradient(to bottom, #4e4d52 63%, $white-color 63%, $white-color 100%);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.main-page__container--product-effect {
+  background-color: $grey-ea-color;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-page__container--preview {
+    background: $white-color;
+  }
+
+  .main-page__container--product-effect {
+    background: linear-gradient(to top, $grey-ea-color 462px, $white-color 462px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page__container--product-effect {
+    background: linear-gradient(to bottom, $white-color 136px, $grey-f2-color 136px);
+  }
+}
