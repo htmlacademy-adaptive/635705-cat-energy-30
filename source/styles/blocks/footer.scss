@@ -48,7 +48,11 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-image: url("../../images/map-mobile@1x.png");
+  background-image:
+    image-set(url("../../images/map-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/map-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/map-mobile@1x.png") type("image/png") 1x,
+      url("../../images/map-mobile@2x.png") type("image/png") 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
