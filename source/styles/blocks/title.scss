@@ -1,0 +1,17 @@
+.title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $accent-text-color;
+}
+
+.title--white {
+  color: $white-color;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

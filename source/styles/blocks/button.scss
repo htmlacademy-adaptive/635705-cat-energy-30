@@ -1,49 +1,66 @@
 .button {
-  display: inline-block;
-  padding: 11px 20px;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-  font-family: $accent-font;
+  font-family: $primary-font;
   font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
+  line-height: 20px;
   text-transform: uppercase;
-  transition: background-color 0.3s ease;
 
-  background-color: $accent-bg-color;
   color: $white-color;
+  background-color: $accent-color;
+  display: block;
+  border: none;
+  text-align: center;
+
+  width: 280px;
+  padding: 10px 15px;
+  cursor: pointer;
 
   &:hover {
-    background-color: $accent-bg-color-hover;
+    background-color: $accent-hv-color;
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 15px 20px 13px;
+  &:focus-visible {
+    background-color: $accent-hv-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $accent-hv-color;
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
+    cursor: default;
   }
 }
 
-.button--disabled {
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-  font-family: $accent-font;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease;
-
-  background-color: $disabled-bg-color;
+.button--secondary {
   color: $content-text-color;
+  background-color: $grey-f2-color;
 
   &:hover {
-    background-color: $accent-bg-color-hover;
+    background-color: #ebebeb;
+  }
+
+  &:focus-visible {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
+  }
+
+  &:disabled {
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }

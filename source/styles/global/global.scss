@@ -10,11 +10,14 @@ html {
 }
 
 body {
-  @include basic-text-param($base-font, 14px, 18px, $content-text-color);
-  min-width: 320px;
-  height: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $content-text-color;
   margin: 0;
-  padding: 0;
 }
 
 a {
@@ -22,6 +25,7 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;

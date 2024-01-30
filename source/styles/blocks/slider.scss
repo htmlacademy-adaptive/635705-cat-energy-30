@@ -2,6 +2,10 @@
   position: relative;
   display: flex;
   margin: auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .slider__range {
@@ -13,7 +17,7 @@
   background-color: transparent;
   height: 256px;
   transition: 0.2s ease-in-out;
-  color: $grey-bg-color;
+  color: $grey-66-color;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +32,7 @@
   width: 4px;
   border-radius: 4px;
   height: 100%;
-  background-color: $grey-bg-color;
+  background-color: $grey-66-color;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -38,19 +42,19 @@
 
 .slider__range:hover {
   cursor: pointer;
-  color: $accent-bg-color;
+  color: $accent-color;
 }
 
 .slider__range:hover::before {
-  background-color: $accent-bg-color;
+  background-color: $accent-color;
 }
 
 .slider__range:active {
-  color: $accent-bg-color-hover;
+  color: $accent-hv-color;
 }
 
 .slider__range:active::before {
-  background-color: $accent-bg-color-hover;
+  background-color: $accent-hv-color;
 }
 
 .slider__image--before {

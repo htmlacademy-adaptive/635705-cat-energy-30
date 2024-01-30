@@ -18,7 +18,7 @@ _global.scss_
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+
 }
 
 img {

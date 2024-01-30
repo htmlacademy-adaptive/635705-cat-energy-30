@@ -1,0 +1,118 @@
+.product-more {
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.product-more__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.product-more__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #111111;
+  padding-top: 39px;
+  margin-bottom: 9px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/icons/stack.svg#product-more-plus");
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.product-more__subtitle {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .product-more {
+    border: none;
+    padding: 0;
+    display: contents;
+  }
+
+  .product-more__wrapper {
+
+    width: 324px;
+    margin-top: 82px;
+    padding: 50px 20px 40px;
+    border: 2px solid $grey-f2-color;
+  }
+
+  .product-more__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 109px;
+    margin-top: 0;
+    margin-bottom: 23px;
+    max-width: 134px;
+    text-align: center;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      background-image: url("../../images/icons/stack.svg#product-more-plus-tablet");
+      top: 48px;
+    }
+  }
+
+  .product-more__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 170px;
+    text-align: center;
+    flex-grow: 1;
+    margin-bottom: 81px;
+  }
+
+  .product-more__link {
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-more__wrapper {
+    width: 245px;
+  }
+
+  .product-more__title {
+    padding-top: 96px;
+    margin-bottom: 26px;
+
+    &::before {
+      top: 46px;
+    }
+  }
+
+  .product-more__subtitle {
+    margin-bottom: 90px;
+  }
+
+  .product-more__link {
+    width: 169px;
+  }
+}

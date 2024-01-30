@@ -1,9 +1,0 @@
-.owner-info__list {
-  @include reset-list;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 80px;
-  }
-}

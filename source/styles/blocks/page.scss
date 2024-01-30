@@ -1,17 +1,21 @@
 .page {
+  width: 100%;
+}
+
+.page--index {
   @media (min-width: $desktop-width) {
-    background-image: url("../../images/bg-header-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right 0;
-    background-size: 50% 697px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 50%;
+      height: 695px;
+      background:
+        linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../../images/bg-header-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-color: #4e4d52;
+      background-position: left;
+    }
   }
-}
-
-.page__title {
-  @include basic-text-param($accent-font, 36px, 36px, $accent-text-color);
-}
-
-.page__lead {
-  @include basic-text-param($accent-font, 14px, 18px, $accent-text-color);
-  text-transform: uppercase;
 }
