@@ -95,7 +95,8 @@
 
 @media (min-width: $desktop-width) {
   .lead {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     min-height: 520px;
     padding: 47px 110px 0 190px;
   }
